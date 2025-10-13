@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  base: "/Biblical-language-promotion/", // Asegúrate que coincida con el nombre del repo
+  base: "/Biblical-language-promotion/",
   plugins: [react()],
   resolve: {
     alias: {
@@ -11,13 +11,22 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "dist", // GitHub Pages servirá desde aquí
+    outDir: "dist",
+    sourcemap: false, // Recomendado para producción
+    minify: 'terser', // Mejor minificación
     rollupOptions: {
       output: {
-        entryFileNames: "assets/[name].js",
-        chunkFileNames: "assets/[name].js",
-        assetFileNames: "assets/[name][extname]",
+        entryFileNames: "assets/[name]-[hash].js", // Agregar hash para cache
+        chunkFileNames: "assets/[name]-[hash].js",
+        assetFileNames: "assets/[name]-[hash][extname]",
       },
     },
   },
+  // Para desarrollo local
+  server: {
+    port: 3000,
+  },
+  preview: {
+    port: 3000,
+  }
 });
