@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
+import DashboardImage from '@/assets/imagen.png'
 
 const HeroSection = () => {
   return (
@@ -61,7 +62,7 @@ const HeroSection = () => {
           </h2>
                 
                 <img 
-                  src="./src/assets/imagen.png"
+                  src={DashboardImage}
                   alt="Dashboard Preview"
                   className="rounded-lg w-full"
                 />
