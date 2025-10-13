@@ -2,13 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
-export default defineConfig(({ mode }) => ({
-  base: "/saasland/",
-  server: {
-    host: "::",
-    port: 8080,
-    open: true,
-  },
+export default defineConfig({
+  base: "/Biblical-language-promotion/", // Asegúrate que coincida con el nombre del repo
   plugins: [react()],
   resolve: {
     alias: {
@@ -16,17 +11,13 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
+    outDir: "dist", // GitHub Pages servirá desde aquí
     rollupOptions: {
       output: {
-        entryFileNames: 'index.js',
-        chunkFileNames: 'chunk-[name].js',
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
-            return 'index.css';
-          }
-          return 'asset-[name][extname]';
-        },
+        entryFileNames: "assets/[name].js",
+        chunkFileNames: "assets/[name].js",
+        assetFileNames: "assets/[name][extname]",
       },
     },
   },
-}));
+});
