@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import NestleAlandImage from '@/assets/NestleAland.jpg'
 
 const CtaSection = () => {
   return (
@@ -14,10 +15,10 @@ const CtaSection = () => {
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="md:w-2/3">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Lleva tus habilidades al siguiente nivel con nosotros
+              Lleva tus habilidades al siguiente nivel con nosotros.
               </h2>
               <p className="text-gray-300 mb-6 max-w-xl">
-                Nuestros cursos son totalmente gratuitos. Ofrecemos apoyo y asistencia a lo largo del camino. 
+                Aprende a estudiar la Biblia en su idioma original. Nosotros te preparamos para ser parte de lo que Dios está haciendo
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button className="bg-saas-orange hover:bg-orange-600 text-white font-semibold">
@@ -31,7 +32,7 @@ const CtaSection = () => {
             
             <div className="md:w-1/3">
               <img 
-                src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=300&h=300&q=80"
+                src={ NestleAlandImage}
                 alt="Dashboard Preview"
                 className="rounded-lg w-full card-shadow"
               />

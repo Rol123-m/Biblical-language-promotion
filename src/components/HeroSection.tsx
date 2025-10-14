@@ -1,7 +1,10 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Target } from 'lucide-react';
 import DashboardImage from '@/assets/imagen.png'
+import AlexeiImage from '@/assets/alexei.jpg'
+import AlejandroImage from '@/assets/alejandro.jpg'
+import LeoImage from '@/assets/leo.jpg'
 
 const HeroSection = () => {
   return (
@@ -40,11 +43,11 @@ const HeroSection = () => {
               
             <div className="mt-10 flex items-center justify-center gap-4">
               <div className="flex -space-x-3">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64" 
+                <img src={LeoImage} 
                   className="w-10 h-10 rounded-full border-2 border-saas-black" alt="User" />
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64" 
+                <img src= {AlexeiImage} 
                   className="w-10 h-10 rounded-full border-2 border-saas-black" alt="User" />
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=64&h=64" 
+                <img src= {AlejandroImage}
                   className="w-10 h-10 rounded-full border-2 border-saas-black" alt="User" />
               </div>
               <p className="text-sm text-gray-300">
@@ -58,7 +61,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-saas-orange to-orange-700 blur-xl opacity-20 rounded-xl"></div>
               <div className="relative bg-saas-darkGray rounded-xl border border-saas-orange/20 p-2 card-shadow transform transition-all duration-500 hover:scale-[1.01] hover:shadow-orange-500/10 hover:shadow-lg">
                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Aprende con nuestras  <span className="gradient-text">herramientas</span> personalizadas, especialmente disñadas para aprender <span className='gradient-text'>Lenguas Bíblicas</span> 
+            Estudia con nuestras  <span className="gradient-text">herramientas</span> personalizadas, especialmente disñadas para aprender <span className='gradient-text'>Lenguas Bíblicas</span> 
           </h2>
                 
                 <img 

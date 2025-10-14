@@ -1,25 +1,49 @@
 
 import React from 'react';
+import AlexeiImage from '@/assets/alexei.jpg'
+import ReidelImage from '@/assets/reidel.jpg'
+import AlejandroImage from '@/assets/alejandro.jpg'
+import MaikelImage from '@/assets/Maikel.jpg'
 
 const testimonials = [
   {
-    text: " El curso ha cambiado mi vida. He aprendido a interpretar el nuevo testamento de manera unica..",
-    author: "Alexei Lores",
+    text: " Para mi ha sido de bendición, me ha ayudado a entender con mayor claridad las profundidades de la Palabra de Dios. Este curso me ha acercado más a Dios.",
+    author: "Alexei Lores Lamorú",
     position: "Pastor CBCOr. Estudiante del STBCOr",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100"
+    image:  AlexeiImage
   },
   {
-    text: " Al principio entre al curso con muchas dudas, pero mi mentalidad fue totalmente transformada",
-    author: " marcos Gonzales.",
-    position: " Pastor Asociado. Estudiante del STBCOr.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100"
+    text: "  Agradezco a Dios por la oportunidad de capacitarme en este curso. Me ha brindado la posibilidad de leer el Nuevo Testamento en el idioma en que fue escrito originalmente, y con ello comprender en mayor profundidad Las Escrituras",
+    author: " Reidel Verdecia.",
+    position: " Pastor CBCOr. Estudiante del STBCOr.",
+    image: ReidelImage
   },
   {
-    text: " Hoy puedo ver la Biblia con nuevos ojos. Mi forma de hacer exegesis, o aun predicar han cambiado por completo",
+    text: " me ha servido para comprender un poco cuan profundo y muchas veces desconocido es el lenguaje de la Biblia, ademas me ha permitido motivar a la iglesia hacia el estudio exhaustivo de las Sagradas Escrituras",
     author: "Alejandro Foubelo",
     position: "Pastor Principal de la 3ra IB de Santiago de Cuba. Estudiante del STBCOr.",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100"
+    image:  AlejandroImage
+  },
+  {
+    text: " Este curso me ha ayudado a valorar mas la Palabra de Dios.",
+    author: "Daniel ramirez. ",
+    position: " Lider de iglesia local.",
+    image:  AlejandroImage
+  },
+   {
+    text: " En poco tiempo pude adquirir un conocimiento basico del idioma, y nuevas herramientas para estudiar e interpretar la Palabra que no tenÃ­a antes ",
+    author: "Marcos Gonzales. ",
+    position: " Pastor Asociado en la 1ra IB de Banes. Estudiante del STBCOr.",
+    image:  AlejandroImage
+  },
+   {
+    text: "  Gracias a este curso puedo entender la biblia en su idioma original, tengo la oportunidad de mejor mis predicaciones, puedo comprender a cavalidad las palabras originales del nuevo testamento  ",
+    author: "Maikel Molina. ",
+    position: " Pastor de la CBCOr, estudiante del STBCOr",
+    image:  MaikelImage
   }
+
+
 ];
 
 const TestimonialsSection = () => {

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LogoImage from '@/assets/blanco y negro.jpeg'
 
 const Footer = () => {
   return (
@@ -10,6 +11,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-1">
             <a href="#" className="inline-block mb-4">
               <span className="text-2xl font-bold bg-gradient-to-r from-saas-orange to-amber-500 bg-clip-text text-transparent">
+             <img style={{width: '80px', height: '60px', borderRadius: '10px'}}  src={LogoImage} alt="" />
               Vivos para Servir
               </span>
             </a>
@@ -90,7 +92,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="Testimonio"
                   className="text-gray-400 hover:text-saas-orange transition-colors"
                 >
                   Home
