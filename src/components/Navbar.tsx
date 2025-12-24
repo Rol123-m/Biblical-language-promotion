@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { Menu, X } from "lucide-react";
+import ImagenLogo from '@/assets/logosFondo.png'
 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-   
+   const imgLogo = <img style={{width: '110px', height: '70px', borderRadius: '10px', marginBottom: '5px'}} src={ImagenLogo} alt="Logo del ministerio" />
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const imagenLogo = <img   />;
+   
 
   return (
     <nav className="bg-saas-black bg-opacity-90 backdrop-blur-sm sticky top-0 z-50 border-b border-saas-darkGray">
@@ -21,8 +22,8 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <RouterLink to="/" className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-saas-orange to-amber-500 bg-clip-text text-transparent">
-                 {imagenLogo}  Vivos para Servir
+              <span style={{display: 'flex', gap: '6px', marginTop: '6px', marginBottom: '3px'}} className="text-2xl font-bold bg-gradient-to-r from-saas-orange to-amber-500 bg-clip-text text-transparent">
+                 {imgLogo}  <span style={{marginTop: '17px'}}>Vivos para Servir</span>
               </span>
             </RouterLink>
           </div>
@@ -82,7 +83,7 @@ const Navbar = () => {
                 duration={500}
                 className="px-3 py-2 text-sm font-medium text-white hover:text-saas-orange cursor-pointer"
               >
-                Contacto
+                Inscripción
               </ScrollLink>
               <RouterLink
                 to=""

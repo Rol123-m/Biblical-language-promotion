@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Check } from 'lucide-react';
@@ -7,53 +6,53 @@ const PricingSection = () => {
   const [isAnnual, setIsAnnual] = useState(true);
   
   const plans = [
-  {
-    name: 'Hebreo Biblico',
-        
-    description: 'Aprende hebreo Bíblico desde cero. ',
-    features: [
-      'Acceso a clases grabadas',
-      'Material PDF descargable',
-      'Grupo de estudio en línea',
-      'Soporte por correo',
-      'Facilitadores disponibles',
-      'plataforma 100% online'
-    ],
-    isPopular: false,
-    ctaText: 'Comienza tu viaje lingüístico'
-  },
-  {
-    name: 'Griego koine',
-  
-    description: 'Aprende griego desde cero. Estudia el Nuevo testamento en su idioma original. ',
-    features: [
-      'Acceso completo a clases grabadas',
-      'Ejercicios interactivos',
-      'Apoyo de facilitadores',
-      'Corrección personalizada de tareas',
-      'Acceso a comunidad privada',
-      'Estandar de idiomas actualizado'
-    ],
-    isPopular: true,
-    ctaText: 'Domina el idioma con nosotros'
-  },
-  {
-    name: 'Facilitadores',
-  
-    description: 'Inscribete para ser un facilitador del ministerio',
-    features: [
-      'Clases magistrales en vivo',
-      'Tutorías personalizadas',
-      'Capacitacion avanzada en pedagogia. ',
-      'Lectura y análisis de textos originales',
-      'Herramientas de exegesis avanzada',
-      'Soporte prioritario 24/7',
-      'Acceso vitalicio al contenido'
-    ],
-    isPopular: false,
-    ctaText: 'Se parte de nuestro ministerio'
-  }
-];
+    {
+      name: 'Hebreo Biblico',
+      description: 'Aprende hebreo Bíblico desde cero.',
+      features: [
+        'Acceso a clases grabadas',
+        'Material PDF descargable',
+        'Grupo de estudio en línea',
+        'Soporte por correo',
+        'Facilitadores disponibles',
+        'plataforma 100% online'
+      ],
+      isPopular: false,
+      ctaText: 'Comienza tu viaje lingüístico',
+      link: 'https://forms.gle/Xf33ejpcbGF2rMNg6'
+    },
+    {
+      name: 'Griego koine',
+      description: 'Aprende griego desde cero. Estudia el Nuevo testamento en su idioma original.',
+      features: [
+        'Acceso completo a clases grabadas',
+        'Ejercicios interactivos',
+        'Apoyo de facilitadores',
+        'Corrección personalizada de tareas',
+        'Acceso a comunidad privada',
+        'Estandar de idiomas actualizado'
+      ],
+      isPopular: true,
+      ctaText: 'Domina el idioma con nosotros',
+      link: 'https://forms.gle/Xf33ejpcbGF2rMNg6'
+    },
+    {
+      name: 'Facilitadores',
+      description: 'Inscribete para ser un facilitador del ministerio',
+      features: [
+        'Clases magistrales en vivo',
+        'Tutorías personalizadas',
+        'Capacitacion avanzada en pedagogia.',
+        'Lectura y análisis de textos originales',
+        'Herramientas de exegesis avanzada',
+        'Soporte prioritario 24/7',
+        'Acceso vitalicio al contenido'
+      ],
+      isPopular: false,
+      ctaText: 'Se parte de nuestro ministerio',
+      link: 'https://forms.gle/Xf33ejpcbGF2rMNg6'
+    }
+  ];
 
   return (
     <div id='cursos' className="bg-gradient-to-b from-saas-darkGray to-saas-black py-16 md:py-24">
@@ -63,14 +62,11 @@ const PricingSection = () => {
             Compara nuestros <span className="gradient-text">Cursos</span> 
           </h2>
           <p className="text-gray-400 mb-8">
-             Escoge el que mejor encaje con tus necesidades. Recomendamos iniciar con griego. 
+            Escoge el que mejor encaje con tus necesidades. Recomendamos iniciar con griego.
           </p>
-
-
           
-          {/* Pricing toggle 
-          
-           <div className="flex items-center justify-center space-x-4 mb-12">
+          {/* Pricing toggle (comentado)
+          <div className="flex items-center justify-center space-x-4 mb-12">
             <span className={`text-sm font-medium ${isAnnual ? 'text-saas-orange' : 'text-gray-400'}`}>
               Annual <span className="text-xs text-saas-orange">(Save 20%)</span>
             </span>
@@ -86,10 +82,7 @@ const PricingSection = () => {
               Monthly
             </span>
           </div>
-          
           */}
-         
-
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -112,8 +105,7 @@ const PricingSection = () => {
               <p className="text-gray-400 mb-6">{plan.description}</p>
               
               <div className="mb-6">
-                
-                <span className="text-gray-400"> Totalmente gratuito</span>
+                <span className="text-gray-400">Totalmente gratuito</span>
               </div>
               
               <ul className="space-y-4 mb-8">
@@ -131,6 +123,7 @@ const PricingSection = () => {
                     ? 'bg-saas-orange hover:bg-orange-600 text-white' 
                     : 'bg-secondary border border-saas-orange/30 hover:border-saas-orange text-white'
                 }`}
+                onClick={() => window.location.href = plan.link}
               >
                 {plan.ctaText}
               </Button>

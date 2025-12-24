@@ -61,7 +61,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-saas-orange to-orange-700 blur-xl opacity-20 rounded-xl"></div>
               <div className="relative bg-saas-darkGray rounded-xl border border-saas-orange/20 p-2 card-shadow transform transition-all duration-500 hover:scale-[1.01] hover:shadow-orange-500/10 hover:shadow-lg">
                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Estudia con nuestras  <span className="gradient-text">herramientas</span> personalizadas, especialmente disñadas para aprender <span className='gradient-text'>Lenguas Bíblicas</span> 
+            Estudia con nuestras  <span className="gradient-text">herramientas</span> personalizadas, especialmente diseñadas para aprender <span className='gradient-text'>Lenguas Bíblicas</span> 
           </h2>
                 
                 <img 

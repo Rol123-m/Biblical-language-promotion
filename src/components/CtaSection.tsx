@@ -21,13 +21,16 @@ const CtaSection = () => {
                 Aprende a estudiar la Biblia en su idioma original. Nosotros te preparamos para ser parte de lo que Dios está haciendo
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-saas-orange hover:bg-orange-600 text-white font-semibold">
+                <Button  
+                onClick={()=> window.location.href= 'https://forms.gle/Xf33ejpcbGF2rMNg6'}
+                className="bg-saas-orange hover:bg-orange-600 text-white font-semibold">
                 Inscribete ya
                 </Button>
                 <Button variant="outline" className="border-background text-white hover:bg-white hover:text-saas-black hover:border-white">
                  Lección de prueba.
                 </Button>
               </div>
+             
             </div>
             
             <div className="md:w-1/3">

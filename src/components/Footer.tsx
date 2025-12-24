@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import LogoImage from '@/assets/blanco y negro.jpeg'
 
 const Footer = () => {
@@ -91,58 +92,74 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Página</h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="Testimonio"
+             <ScrollLink
+                 to="Home"
+                 smooth={true}
+                 offset={-70}
+                 duration={500}
                   className="text-gray-400 hover:text-saas-orange transition-colors"
-                >
-                  Home
-                </a>
+                            >
+                              Home
+              </ScrollLink>
               </li>
+             
               <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
-                >
+                <ScrollLink
+                 to="Habilidades"
+                 smooth={true}
+                 offset={-70}
+                 duration={500}
+                 className="text-gray-400 hover:text-saas-orange transition-colors"
+               >
                  Habilidades
-                </a>
+               </ScrollLink>
+
+              </li>
+             
+              <li>
+          <ScrollLink
+           to="FaQ"
+           smooth={true}
+           offset={-70}
+           duration={500}
+          className="text-gray-400 hover:text-saas-orange transition-colors"
+         >
+           Preguntas Frequentes
+         </ScrollLink>
+                                                 
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
-                >
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
-                >
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
-                >
-                  Features
-                </a>
+      <ScrollLink
+         to="cursos"
+         smooth={true}
+         offset={-70}
+         duration={500}
+          className="text-gray-400 hover:text-saas-orange transition-colors"
+       >
+         Cursos
+       </ScrollLink>
               </li>
             </ul>
           </div>
 
           {/* Company links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <h3 className="text-lg font-semibold mb-4">Ministerio</h3>
             <ul className="space-y-3">
               <li>
                 <a
                   href="#"
                   className="text-gray-400 hover:text-saas-orange transition-colors"
                 >
-                  Blog
+                Sitio Web Oficial del ministerio
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#'
+                  className="text-gray-400 hover:text-saas-orange transition-colors"
+                >
+                  Contactanos
                 </a>
               </li>
               <li>
@@ -150,7 +167,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-saas-orange transition-colors"
                 >
-                  Contact Us
+                  Sobre nuestros cursos
                 </a>
               </li>
               <li>
@@ -158,21 +175,13 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-saas-orange transition-colors"
                 >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-saas-orange transition-colors"
-                >
-                  Careers
+               Dona para nuestro ministerio
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Legal links */}
+          {/* contacto */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-3">
@@ -181,7 +190,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-saas-orange transition-colors"
                 >
-                  Privacy Policy
+                 Email Ministerial
                 </a>
               </li>
               <li>
@@ -189,7 +198,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-saas-orange transition-colors"
                 >
-                  Terms & Conditions
+                  Email del Director
                 </a>
               </li>
               <li>
@@ -197,7 +206,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-saas-orange transition-colors"
                 >
-                  Cookie Policy
+                  Email del asesor academico
                 </a>
               </li>
               <li>
@@ -205,7 +214,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-saas-orange transition-colors"
                 >
-                  GDPR
+                  Enlace al curso
                 </a>
               </li>
             </ul>

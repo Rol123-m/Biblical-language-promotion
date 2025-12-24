@@ -4,6 +4,7 @@ import AlexeiImage from '@/assets/alexei.jpg'
 import ReidelImage from '@/assets/reidel.jpg'
 import AlejandroImage from '@/assets/alejandro.jpg'
 import MaikelImage from '@/assets/Maikel.jpg'
+import DanielImage from '@/assets/Daniel.jpg'
 
 const testimonials = [
   {
@@ -28,10 +29,10 @@ const testimonials = [
     text: " Este curso me ha ayudado a valorar mas la Palabra de Dios.",
     author: "Daniel ramirez. ",
     position: " Lider de iglesia local.",
-    image:  AlejandroImage
+    image:  DanielImage
   },
    {
-    text: " En poco tiempo pude adquirir un conocimiento basico del idioma, y nuevas herramientas para estudiar e interpretar la Palabra que no tenÃ­a antes ",
+    text: " En poco tiempo pude adquirir un conocimiento basico del idioma, y nuevas herramientas para estudiar e interpretar la Palabra que no tení­a antes ",
     author: "Marcos Gonzales. ",
     position: " Pastor Asociado en la 1ra IB de Banes. Estudiante del STBCOr.",
     image:  AlejandroImage
